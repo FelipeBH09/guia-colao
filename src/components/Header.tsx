@@ -1,7 +1,8 @@
-import { Coffee, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo-guia-colao.jpg";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -29,14 +30,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="bg-gradient-gold rounded-full p-2 shadow-gold transition-smooth group-hover:scale-110">
-              
-            </div>
-            <div className="flex flex-col">
-              
-              
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src={logo} 
+              alt="Guía Colao" 
+              className="h-12 md:h-14 transition-smooth group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
