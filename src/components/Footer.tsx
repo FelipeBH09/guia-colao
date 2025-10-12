@@ -35,7 +35,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/greca" className="hover:text-accent transition-smooth">
-                  Premio Greca
+                  Reconocimiento Greca COLAO
                 </Link>
               </li>
             </ul>

@@ -32,7 +32,7 @@ const CafeCard = ({ cafe, onViewMore }: CafeCardProps) => {
         {cafe.hasGreca && (
           <div className="absolute top-3 right-3 bg-accent text-primary px-3 py-1 rounded-full shadow-gold flex items-center gap-1">
             <Award className="h-4 w-4" />
-            <span className="text-sm font-semibold">Greca</span>
+            <span className="text-sm font-semibold">Greca COLAO</span>
           </div>
         )}
         {cafe.isNew && (

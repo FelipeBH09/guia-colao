@@ -74,7 +74,7 @@ const Index = () => {
             <Link to="/greca">
               <Button variant="outline" className="w-full h-24 flex flex-col gap-2 hover:shadow-elegant transition-smooth">
                 <Award className="h-8 w-8 text-accent" />
-                <span className="font-semibold">Premio Greca</span>
+                <span className="font-semibold">Reconocimiento Greca COLAO</span>
               </Button>
             </Link>
             <Link to="/sobre-nosotros">
@@ -93,13 +93,13 @@ const Index = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-accent/10 px-4 py-2 rounded-full mb-4">
               <Award className="h-5 w-5 text-accent" />
-              <span className="font-semibold text-accent">Premio Greca</span>
+              <span className="font-semibold text-accent">Reconocimiento Greca COLAO</span>
             </div>
             <h2 className="text-4xl font-bold font-serif mb-4">
               Cafeterías Destacadas
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Las cafeterías con calificación excepcional (4.5★ - 5★) merecedoras del prestigioso Premio Greca
+              Las cafeterías con calificación excepcional (4.5★ - 5★) merecedoras del prestigioso Reconocimiento Greca COLAO
             </p>
           </div>
 
@@ -112,7 +112,7 @@ const Index = () => {
           <div className="text-center mt-8">
             <Link to="/greca">
               <Button size="lg" className="gap-2">
-                Ver todas las cafeterías con Greca
+                Ver todas las cafeterías con Greca COLAO
                 <Award className="h-5 w-5" />
               </Button>
             </Link>

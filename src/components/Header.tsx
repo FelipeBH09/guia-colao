@@ -19,7 +19,7 @@ const Header = () => {
     name: "Nuevas",
     path: "/nuevas"
   }, {
-    name: "Greca",
+    name: "Reconocimiento Greca COLAO",
     path: "/greca"
   }, {
     name: "Contacto",

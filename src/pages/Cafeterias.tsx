@@ -105,12 +105,12 @@ const Cafeterias = () => {
 
               <Select value={grecaFilter} onValueChange={setGrecaFilter}>
                 <SelectTrigger className="w-full md:w-[180px]">
-                  <SelectValue placeholder="Premio Greca" />
+                  <SelectValue placeholder="Reconocimiento Greca COLAO" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">Todas</SelectItem>
-                  <SelectItem value="true">Con Greca</SelectItem>
-                  <SelectItem value="false">Sin Greca</SelectItem>
+                  <SelectItem value="true">Con Greca COLAO</SelectItem>
+                  <SelectItem value="false">Sin Greca COLAO</SelectItem>
                 </SelectContent>
               </Select>
             </div>

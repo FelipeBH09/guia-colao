@@ -19,10 +19,10 @@ const Greca = () => {
             <span className="font-semibold text-lg">Máximo Reconocimiento</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6">
-            Premio Greca
+            Reconocimiento Greca COLAO
           </h1>
           <p className="text-xl max-w-3xl mx-auto opacity-90 mb-8">
-            El premio Greca es el máximo reconocimiento otorgado por Guía Colao a cafeterías excepcionales con calificaciones de 4.5 a 5 estrellas
+            El Reconocimiento Greca COLAO es el máximo reconocimiento otorgado por Guía Colao a cafeterías excepcionales con calificaciones de 4.5 a 5 estrellas
           </p>
           <div className="flex items-center justify-center gap-1">
             {[1, 2, 3, 4, 5].map((star) => (
@@ -37,7 +37,7 @@ const Greca = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold font-serif mb-8 text-center">
-              ¿Qué se necesita para obtener la Greca?
+              ¿Qué se necesita para obtener el Reconocimiento Greca COLAO?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-card rounded-xl p-6 shadow-elegant">
@@ -89,7 +89,7 @@ const Greca = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold font-serif mb-4">
-              Cafeterías con Premio Greca
+              Cafeterías con Reconocimiento Greca COLAO
             </h2>
             <p className="text-lg text-muted-foreground">
               {grecaCafes.length} cafeterías excepcionales merecedoras de este prestigioso reconocimiento
@@ -106,7 +106,7 @@ const Greca = () => {
             <div className="text-center py-16">
               <Award className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
               <p className="text-xl text-muted-foreground mb-4">
-                Aún no hay cafeterías con el Premio Greca
+                Aún no hay cafeterías con el Reconocimiento Greca COLAO
               </p>
               <p className="text-muted-foreground">
                 Estamos evaluando los mejores establecimientos para otorgar este prestigioso premio

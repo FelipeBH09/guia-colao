@@ -11,11 +11,11 @@ import {
 const SobreNosotros = () => {
   const faqs = [
     {
-      question: "¿Cómo obtener mi Greca Colao?",
-      answer: "La Greca Colao es un premio otorgado exclusivamente a cafeterías con calificaciones excepcionales entre 4.5 y 5 estrellas. Nuestros inspectores expertos visitan cada establecimiento de forma anónima y evalúan múltiples aspectos antes de otorgar este prestigioso reconocimiento. No es posible solicitarlo directamente; debe ser ganado mediante excelencia consistente.",
+      question: "¿Cómo obtener el Reconocimiento Greca COLAO?",
+      answer: "El Reconocimiento Greca COLAO es otorgado exclusivamente a cafeterías con calificaciones excepcionales entre 4.5 y 5 estrellas. Nuestros inspectores expertos visitan cada establecimiento de forma anónima y evalúan múltiples aspectos antes de otorgar este prestigioso reconocimiento. No es posible solicitarlo directamente; debe ser ganado mediante excelencia consistente.",
     },
     {
-      question: "¿Qué toman en cuenta los inspectores de COLAO para otorgar la Greca?",
+      question: "¿Qué toman en cuenta los inspectores de COLAO para otorgar el Reconocimiento Greca COLAO?",
       answer: "Nuestros inspectores evalúan: 1) Calidad del café (origen, preparación, sabor), 2) Ambiente (diseño, limpieza, comodidad, música), 3) Servicio (atención, conocimiento del personal), 4) Originalidad (propuesta única, innovación), 5) Consistencia (calidad mantenida en múltiples visitas). Cada criterio debe alcanzar estándares excepcionales.",
     },
     {
@@ -28,7 +28,7 @@ const SobreNosotros = () => {
     },
     {
       question: "¿Qué significa cada estrella en la calificación?",
-      answer: "⭐ 1-2 estrellas: Básico, necesita mejoras significativas. ⭐⭐⭐ 3 estrellas: Bueno, experiencia satisfactoria. ⭐⭐⭐⭐ 4 estrellas: Muy bueno, vale la pena visitar. ⭐⭐⭐⭐⭐ 4.5-5 estrellas: Excepcional, merece el Premio Greca. Las calificaciones se actualizan regularmente basándose en evaluaciones continuas.",
+      answer: "⭐ 1-2 estrellas: Básico, necesita mejoras significativas. ⭐⭐⭐ 3 estrellas: Bueno, experiencia satisfactoria. ⭐⭐⭐⭐ 4 estrellas: Muy bueno, vale la pena visitar. ⭐⭐⭐⭐⭐ 4.5-5 estrellas: Excepcional, merece el Reconocimiento Greca COLAO. Las calificaciones se actualizan regularmente basándose en evaluaciones continuas.",
     },
   ];
 
@@ -60,13 +60,13 @@ const SobreNosotros = () => {
               Nuestra Historia
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Guía Colao nació de la pasión por el café de calidad y el deseo de conectar a los amantes del café con los mejores establecimientos de República Dominicana. Fundada por un grupo de expertos catadores y entusiastas del café, nuestra misión es elevar la cultura cafetera dominicana y reconocer la excelencia donde la encontramos.
+              La Guía COLAO nace de la pasión por el café, la calidad y el deseo de conectar a los amantes del café con los mejores establecimientos de la República Dominicana. Inspirada y fundada por Emely Hernández y Hanna Méndez, estudiantes de Gestión de Alimentos y Bebidas de la PUCMM, surge ante la falta de una guía que evalúe de manera profesional las mejores cafeterías del país.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              A lo largo de los años, hemos visitado cientos de cafeterías en todo el país, desde acogedores rincones en la Zona Colonial hasta modernos espacios en las principales ciudades. Cada visita es una oportunidad para descubrir nuevos sabores, ambientes únicos y el talento de baristas dedicados a su arte.
+              Nuestra misión es evaluar la cultura cafetera dominicana y reconocer la excelencia donde la encontremos. En el corto tiempo de existencia de la guía, hemos calificado cuatro cafeterías y, tras aplicar nuestro checklist de criterios profesionales, hemos otorgado el Reconocimiento Greca COLAO a aquellas que cumplen con los estándares más altos.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Nuestra metodología se basa en evaluaciones objetivas realizadas por inspectores certificados que visitan los establecimientos de forma anónima, garantizando así opiniones imparciales y honestas que nuestros lectores pueden confiar.
+              Nuestra metodología se basa en evaluaciones objetivas realizadas por inspectores que visitan los establecimientos de forma anónima, garantizando opiniones imparciales y honestas.
             </p>
           </div>
         </div>
