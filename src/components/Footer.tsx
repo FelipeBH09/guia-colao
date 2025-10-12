@@ -1,5 +1,6 @@
-import { Coffee, Instagram, Facebook, Mail } from "lucide-react";
+import { Instagram, Facebook, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoBrown from "@/assets/logo-guia-colao-brown.jpg";
 
 const Footer = () => {
   return (
@@ -8,15 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo y descripción */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="bg-accent rounded-full p-2">
-                <Coffee className="h-6 w-6 text-primary" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold font-serif">GUÍA</span>
-                <span className="text-lg font-serif italic text-accent">Colao</span>
-              </div>
-            </div>
+            <img 
+              src={logoBrown} 
+              alt="Guía Colao" 
+              className="h-12"
+            />
             <p className="text-sm text-primary-foreground/80">
               Las mejores cafeterías de República Dominicana evaluadas por expertos.
             </p>
