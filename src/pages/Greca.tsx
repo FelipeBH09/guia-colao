@@ -26,7 +26,7 @@ const Greca = () => {
           </p>
           <div className="flex items-center justify-center gap-1">
             {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className="h-8 w-8 fill-primary text-primary" />
+              <Star key={star} className="h-8 w-8 fill-accent text-accent" />
             ))}
           </div>
         </div>
