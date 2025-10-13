@@ -6,40 +6,38 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-
 const Contacto = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("¡Mensaje enviado!", {
-      description: "Nos pondremos en contacto contigo pronto.",
+      description: "Nos pondremos en contacto contigo pronto."
     });
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
   };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     }));
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
 
       {/* Hero */}
       <section className="py-16 bg-gradient-warm text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 text-orange-900">
             Contacto
           </h1>
           <p className="text-xl max-w-2xl mx-auto opacity-90">
@@ -62,60 +60,28 @@ const Contacto = () => {
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
                     Nombre completo
                   </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Tu nombre"
-                  />
+                  <Input id="name" name="name" type="text" value={formData.name} onChange={handleChange} required placeholder="Tu nombre" />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
                     Correo electrónico
                   </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="tu@email.com"
-                  />
+                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="tu@email.com" />
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium mb-2">
                     Asunto
                   </label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    type="text"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    placeholder="¿En qué podemos ayudarte?"
-                  />
+                  <Input id="subject" name="subject" type="text" value={formData.subject} onChange={handleChange} required placeholder="¿En qué podemos ayudarte?" />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
                     Mensaje
                   </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    placeholder="Escribe tu mensaje aquí..."
-                    rows={6}
-                  />
+                  <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required placeholder="Escribe tu mensaje aquí..." rows={6} />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full gap-2">
@@ -188,8 +154,6 @@ const Contacto = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contacto;
