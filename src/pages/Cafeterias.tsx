@@ -29,7 +29,7 @@ const Cafeterias = () => {
           <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 text-orange-900">
             Todas las Cafeterías
           </h1>
-          <p className="text-xl max-w-2xl mx-auto opacity-90">
+          <p className="text-xl max-w-2xl mx-auto text-accent font-medium">
             Explora nuestra selección completa de cafeterías evaluadas
           </p>
         </div>
