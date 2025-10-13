@@ -8,7 +8,7 @@ const SobreNosotros = () => {
     answer: "El Reconocimiento Greca COLAO es otorgado exclusivamente a cafeterías con calificaciones excepcionales entre 4.5 y 5 estrellas. Nuestros inspectores expertos visitan cada establecimiento de forma anónima y evalúan múltiples aspectos antes de otorgar este prestigioso reconocimiento. No es posible solicitarlo directamente; debe ser ganado mediante excelencia consistente."
   }, {
     question: "¿Qué toman en cuenta los inspectores de COLAO para otorgar el Reconocimiento Greca COLAO?",
-    answer: "Nuestros inspectores evalúan: 1) Calidad del café (origen, preparación, sabor), 2) Ambiente (diseño, limpieza, comodidad, música), 3) Servicio (atención, conocimiento del personal), 4) Originalidad (propuesta única, innovación), 5) Consistencia (calidad mantenida en múltiples visitas). Cada criterio debe alcanzar estándares excepcionales."
+    answer: "Nuestros inspectores evalúan: 1) Calidad del café y los productos ofrecidos (origen, preparación, sabor), 2) Ambiente (diseño, limpieza, comodidad, música), 3) Servicio (atención, conocimiento del personal), 4) Originalidad (propuesta única, innovación), 5) Consistencia (calidad mantenida en múltiples visitas). Cada criterio debe alcanzar estándares excepcionales."
   }, {
     question: "¿Qué criterios se usan para calificar las cafeterías?",
     answer: "Utilizamos el sistema COLAO - Calificación Orgánica de Locales, Ambiente y Originalidad. Evaluamos: calidad del café y productos (40%), ambiente y diseño (25%), servicio al cliente (20%), originalidad y propuesta única (15%). Cada cafetería recibe una puntuación de 1 a 5 estrellas basada en estos criterios."
