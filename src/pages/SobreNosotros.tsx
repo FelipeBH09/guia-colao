@@ -17,7 +17,7 @@ const SobreNosotros = () => {
     answer: "¡Por supuesto! Valoramos mucho las sugerencias de nuestra comunidad. Puedes enviarnos tu recomendación a través de nuestra página de contacto. Incluye el nombre, ubicación y qué hace especial a ese lugar. Nuestro equipo evaluará todas las sugerencias y programará visitas a las cafeterías más prometedoras."
   }, {
     question: "¿Qué significa cada estrella en la calificación?",
-    answer: "⭐ 1-2 estrellas: Básico, necesita mejoras significativas. ⭐⭐⭐ 3 estrellas: Bueno, experiencia satisfactoria. ⭐⭐⭐⭐ 4 estrellas: Muy bueno, vale la pena visitar. ⭐⭐⭐⭐⭐ 4.5-5 estrellas: Excepcional, merece el Reconocimiento Greca COLAO. Las calificaciones se actualizan regularmente basándose en evaluaciones continuas."
+    answer: "⭐ 1-2 estrellas: Básico, necesita mejoras significativas. ⭐⭐⭐ 3 estrellas: Bueno, experiencia satisfactoria. ⭐⭐⭐⭐ 4 estrellas: Muy bueno, vale la pena visitar. ⭐⭐⭐⭐⭐ 4.5-5 estrellas: Excepcional, merece ser visitado para ver si califica para obtener el reconocimiento de Greca COLAO. Las calificaciones se actualizan regularmente basándose en evaluaciones continuas."
   }];
   return <div className="min-h-screen flex flex-col">
       <Header />
