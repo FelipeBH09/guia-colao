@@ -141,7 +141,7 @@ const Index = () => {
           <h2 className="text-4xl font-bold font-serif mb-6 text-orange-900">
             ¿Conoces una cafetería excepcional?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 text-yellow-600">
             Ayúdanos a hacer crecer nuestra guía sugiriendo nuevas cafeterías para evaluar
           </p>
           <Link to="/contacto">
