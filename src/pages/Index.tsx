@@ -8,25 +8,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cafes } from "@/data/cafes";
 import heroImage from "@/assets/hero-coffee.jpg";
-
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  
   const featuredCafes = cafes.filter(cafe => cafe.hasGreca).slice(0, 3);
   const newCafes = cafes.filter(cafe => cafe.isNew).slice(0, 3);
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
 
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt="Hero coffee shop"
-            className="w-full h-full object-cover"
-          />
+          <img src={heroImage} alt="Hero coffee shop" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60" />
         </div>
         
@@ -40,13 +32,7 @@ const Index = () => {
           
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto bg-card rounded-full shadow-elegant p-2 flex gap-2 animate-scale-in">
-            <Input
-              type="text"
-              placeholder="Buscar por ubicación o nombre..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="border-0 focus-visible:ring-0 text-lg"
-            />
+            <Input type="text" placeholder="Buscar por ubicación o nombre..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} className="border-0 focus-visible:ring-0 text-lg" />
             <Button size="lg" className="rounded-full px-8">
               <Search className="h-5 w-5 mr-2" />
               Buscar
@@ -104,9 +90,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredCafes.map((cafe) => (
-              <CafeCard key={cafe.id} cafe={cafe} />
-            ))}
+            {featuredCafes.map(cafe => <CafeCard key={cafe.id} cafe={cafe} />)}
           </div>
 
           <div className="text-center mt-8">
@@ -137,9 +121,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {newCafes.map((cafe) => (
-              <CafeCard key={cafe.id} cafe={cafe} />
-            ))}
+            {newCafes.map(cafe => <CafeCard key={cafe.id} cafe={cafe} />)}
           </div>
 
           <div className="text-center mt-8">
@@ -156,7 +138,7 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-warm text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold font-serif mb-6">
+          <h2 className="text-4xl font-bold font-serif mb-6 text-orange-900">
             ¿Conoces una cafetería excepcional?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
@@ -172,8 +154,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
