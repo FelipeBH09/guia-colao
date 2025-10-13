@@ -21,7 +21,7 @@ const Nuevas = () => {
           <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 text-amber-900">
             Nuevas Cafeterías
           </h1>
-          <p className="text-xl max-w-2xl mx-auto opacity-90">
+          <p className="text-xl max-w-2xl mx-auto text-accent font-medium">
             Las últimas incorporaciones a nuestra guía, listas para sorprenderte con sus propuestas únicas
           </p>
         </div>
