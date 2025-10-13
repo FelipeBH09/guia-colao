@@ -46,7 +46,7 @@ const SobreNosotros = () => {
               Nuestra Historia
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4 text-justify">
-              La Guía COLAO nace de la pasión por el café, la calidad y el deseo de conectar a los amantes del café con los mejores establecimientos de la República Dominicana. Inspirada y fundada por Emely Hernández y Hanna Méndez, estudiantes de Gestión de Alimentos y Bebidas de la PUCMM, surge ante la falta de una guía que evalúe de manera profesional las mejores cafeterías del país.
+              La Guía COLAO nace de la pasión por el café, la calidad y el deseo de conectar a los amantes del café con los mejores establecimientos de la República Dominicana. Inspirada y fundada por Emely Hernández y Hanna Méndez, estudiantes de Hospitalidad y Turismo, cursando la materia de Gestión de Alimentos y Bebidas de la PUCMM, COLAO surge ante la falta de una guía que evalúe de manera profesional las mejores cafeterías del país.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4 text-justify">
               Nuestra misión es evaluar la cultura cafetera dominicana y reconocer la excelencia donde la encontremos. En el corto tiempo de existencia de la guía, hemos calificado cuatro cafeterías y, tras aplicar nuestro checklist de criterios profesionales, hemos otorgado el Reconocimiento Greca COLAO a aquellas que cumplen con los estándares más altos.
