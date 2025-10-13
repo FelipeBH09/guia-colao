@@ -1,39 +1,25 @@
 import { Coffee, Award, Users, Target } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const SobreNosotros = () => {
-  const faqs = [
-    {
-      question: "¿Cómo obtener el Reconocimiento Greca COLAO?",
-      answer: "El Reconocimiento Greca COLAO es otorgado exclusivamente a cafeterías con calificaciones excepcionales entre 4.5 y 5 estrellas. Nuestros inspectores expertos visitan cada establecimiento de forma anónima y evalúan múltiples aspectos antes de otorgar este prestigioso reconocimiento. No es posible solicitarlo directamente; debe ser ganado mediante excelencia consistente.",
-    },
-    {
-      question: "¿Qué toman en cuenta los inspectores de COLAO para otorgar el Reconocimiento Greca COLAO?",
-      answer: "Nuestros inspectores evalúan: 1) Calidad del café (origen, preparación, sabor), 2) Ambiente (diseño, limpieza, comodidad, música), 3) Servicio (atención, conocimiento del personal), 4) Originalidad (propuesta única, innovación), 5) Consistencia (calidad mantenida en múltiples visitas). Cada criterio debe alcanzar estándares excepcionales.",
-    },
-    {
-      question: "¿Qué criterios se usan para calificar las cafeterías?",
-      answer: "Utilizamos el sistema COLAO - Calificación Orgánica de Locales, Ambiente y Originalidad. Evaluamos: calidad del café y productos (40%), ambiente y diseño (25%), servicio al cliente (20%), originalidad y propuesta única (15%). Cada cafetería recibe una puntuación de 1 a 5 estrellas basada en estos criterios.",
-    },
-    {
-      question: "¿Puedo sugerir una cafetería para la guía?",
-      answer: "¡Por supuesto! Valoramos mucho las sugerencias de nuestra comunidad. Puedes enviarnos tu recomendación a través de nuestra página de contacto. Incluye el nombre, ubicación y qué hace especial a ese lugar. Nuestro equipo evaluará todas las sugerencias y programará visitas a las cafeterías más prometedoras.",
-    },
-    {
-      question: "¿Qué significa cada estrella en la calificación?",
-      answer: "⭐ 1-2 estrellas: Básico, necesita mejoras significativas. ⭐⭐⭐ 3 estrellas: Bueno, experiencia satisfactoria. ⭐⭐⭐⭐ 4 estrellas: Muy bueno, vale la pena visitar. ⭐⭐⭐⭐⭐ 4.5-5 estrellas: Excepcional, merece el Reconocimiento Greca COLAO. Las calificaciones se actualizan regularmente basándose en evaluaciones continuas.",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  const faqs = [{
+    question: "¿Cómo obtener el Reconocimiento Greca COLAO?",
+    answer: "El Reconocimiento Greca COLAO es otorgado exclusivamente a cafeterías con calificaciones excepcionales entre 4.5 y 5 estrellas. Nuestros inspectores expertos visitan cada establecimiento de forma anónima y evalúan múltiples aspectos antes de otorgar este prestigioso reconocimiento. No es posible solicitarlo directamente; debe ser ganado mediante excelencia consistente."
+  }, {
+    question: "¿Qué toman en cuenta los inspectores de COLAO para otorgar el Reconocimiento Greca COLAO?",
+    answer: "Nuestros inspectores evalúan: 1) Calidad del café (origen, preparación, sabor), 2) Ambiente (diseño, limpieza, comodidad, música), 3) Servicio (atención, conocimiento del personal), 4) Originalidad (propuesta única, innovación), 5) Consistencia (calidad mantenida en múltiples visitas). Cada criterio debe alcanzar estándares excepcionales."
+  }, {
+    question: "¿Qué criterios se usan para calificar las cafeterías?",
+    answer: "Utilizamos el sistema COLAO - Calificación Orgánica de Locales, Ambiente y Originalidad. Evaluamos: calidad del café y productos (40%), ambiente y diseño (25%), servicio al cliente (20%), originalidad y propuesta única (15%). Cada cafetería recibe una puntuación de 1 a 5 estrellas basada en estos criterios."
+  }, {
+    question: "¿Puedo sugerir una cafetería para la guía?",
+    answer: "¡Por supuesto! Valoramos mucho las sugerencias de nuestra comunidad. Puedes enviarnos tu recomendación a través de nuestra página de contacto. Incluye el nombre, ubicación y qué hace especial a ese lugar. Nuestro equipo evaluará todas las sugerencias y programará visitas a las cafeterías más prometedoras."
+  }, {
+    question: "¿Qué significa cada estrella en la calificación?",
+    answer: "⭐ 1-2 estrellas: Básico, necesita mejoras significativas. ⭐⭐⭐ 3 estrellas: Bueno, experiencia satisfactoria. ⭐⭐⭐⭐ 4 estrellas: Muy bueno, vale la pena visitar. ⭐⭐⭐⭐⭐ 4.5-5 estrellas: Excepcional, merece el Reconocimiento Greca COLAO. Las calificaciones se actualizan regularmente basándose en evaluaciones continuas."
+  }];
+  return <div className="min-h-screen flex flex-col">
       <Header />
 
       {/* Hero Section */}
@@ -43,10 +29,10 @@ const SobreNosotros = () => {
             <Coffee className="h-5 w-5" />
             <span className="font-semibold">Nuestra Historia</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 animate-fade-in text-amber-900">
             Sobre Guía Colao
           </h1>
-          <p className="text-xl max-w-3xl mx-auto opacity-90">
+          <p className="text-xl max-w-3xl mx-auto opacity-90 text-yellow-600">
             La guía definitiva de cafeterías en República Dominicana
           </p>
         </div>
@@ -59,13 +45,13 @@ const SobreNosotros = () => {
             <h2 className="text-3xl font-bold font-serif mb-6 text-foreground">
               Nuestra Historia
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
+            <p className="text-muted-foreground leading-relaxed mb-4 text-justify">
               La Guía COLAO nace de la pasión por el café, la calidad y el deseo de conectar a los amantes del café con los mejores establecimientos de la República Dominicana. Inspirada y fundada por Emely Hernández y Hanna Méndez, estudiantes de Gestión de Alimentos y Bebidas de la PUCMM, surge ante la falta de una guía que evalúe de manera profesional las mejores cafeterías del país.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
+            <p className="text-muted-foreground leading-relaxed mb-4 text-justify">
               Nuestra misión es evaluar la cultura cafetera dominicana y reconocer la excelencia donde la encontremos. En el corto tiempo de existencia de la guía, hemos calificado cuatro cafeterías y, tras aplicar nuestro checklist de criterios profesionales, hemos otorgado el Reconocimiento Greca COLAO a aquellas que cumplen con los estándares más altos.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-justify">
               Nuestra metodología se basa en evaluaciones objetivas realizadas por inspectores que visitan los establecimientos de forma anónima, garantizando opiniones imparciales y honestas.
             </p>
           </div>
@@ -144,27 +130,19 @@ const SobreNosotros = () => {
           </div>
 
           <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="bg-card border border-border rounded-lg px-6 shadow-sm"
-              >
+            {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-lg px-6 shadow-sm">
                 <AccordionTrigger className="text-left font-semibold hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
-              </AccordionItem>
-            ))}
+              </AccordionItem>)}
           </Accordion>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default SobreNosotros;
