@@ -40,7 +40,7 @@ const Contacto = () => {
           <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 text-orange-900">
             Contacto
           </h1>
-          <p className="text-xl max-w-2xl mx-auto opacity-90">
+          <p className="text-xl max-w-2xl mx-auto opacity-90 text-yellow-600">
             ¿Tienes preguntas o sugerencias? Nos encantaría escucharte
           </p>
         </div>
