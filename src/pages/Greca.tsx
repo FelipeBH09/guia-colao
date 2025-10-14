@@ -66,7 +66,7 @@ const Greca = () => {
                 </div>
                 <h3 className="font-serif font-bold mb-2">Calidad Premium</h3>
                 <p className="text-sm text-muted-foreground">
-                  Café de origen superior preparado con técnicas profesionales
+                  Café y productos de origen superior preparados con técnicas profesionales
                 </p>
               </div>
 
@@ -91,9 +91,14 @@ const Greca = () => {
             <h2 className="text-3xl font-bold font-serif mb-4">
               Cafeterías con Reconocimiento Greca COLAO
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-4">
               {grecaCafes.length} cafeterías excepcionales merecedoras de este prestigioso reconocimiento
             </p>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-sm text-muted-foreground italic">
+                Cafeterías reconocidas: Casa Barista & Co (Ciudad Colonial), Affogato Café (Ciudad Colonial, Calle Sánchez con Arzobispo Nouel), Sugar Mommy Café (Los Prados / Bella Vista, Santo Domingo) y Mr & Mrs Coffee (Sucursales en Gustavo Mejía Ricart y Av. Sarasota, Santo Domingo)
+              </p>
+            </div>
           </div>
 
           {grecaCafes.length > 0 ? (

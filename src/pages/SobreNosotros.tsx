@@ -11,7 +11,7 @@ const SobreNosotros = () => {
     answer: "Nuestros inspectores evalúan: 1) Calidad del café y los productos ofrecidos (origen, preparación, sabor), 2) Ambiente (diseño, limpieza, comodidad, música), 3) Servicio (atención, conocimiento del personal), 4) Originalidad (propuesta única, innovación), 5) Consistencia (calidad mantenida en múltiples visitas). Cada criterio debe alcanzar estándares excepcionales."
   }, {
     question: "¿Qué criterios se usan para calificar las cafeterías?",
-    answer: "Utilizamos el sistema COLAO - Calificación Orgánica de Locales, Ambiente y Originalidad. Evaluamos: calidad del café y productos (40%), ambiente y diseño (25%), servicio al cliente (20%), originalidad y propuesta única (15%). Cada cafetería recibe una puntuación de 1 a 5 estrellas basada en estos criterios."
+    answer: "Utilizamos el sistema COLAO - Calificación Orgánica de Locales, Ambiente y Originalidad. Evaluamos: calidad del café y productos (25%), ambiente y diseño (20%), servicio al cliente (40%) y originalidad y propuesta única (15%). Cada cafetería recibe una puntuación de 1 a 5 estrellas basada en estos criterios, y solo las que alcanzan 4 estrellas en adelante son reconocidas con la Greca COLAO."
   }, {
     question: "¿Puedo sugerir una cafetería para la guía?",
     answer: "¡Por supuesto! Valoramos mucho las sugerencias de nuestra comunidad. Puedes enviarnos tu recomendación a través de nuestra página de contacto. Incluye el nombre, ubicación y qué hace especial a ese lugar. Nuestro equipo evaluará todas las sugerencias y programará visitas a las cafeterías más prometedoras."
