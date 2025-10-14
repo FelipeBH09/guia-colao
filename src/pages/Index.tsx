@@ -1,6 +1,6 @@
 import { Search, Award, Coffee, TrendingUp, MapPin } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CafeCard from "@/components/CafeCard";
@@ -10,6 +10,11 @@ import { cafes } from "@/data/cafes";
 import heroImage from "@/assets/hero-coffee.jpg";
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
+  const handleSearch = () => {
+    const q = searchQuery.trim();
+    navigate(`/cafeterias${q ? `?q=${encodeURIComponent(q)}` : ""}`);
+  };
   const featuredCafes = cafes.filter(cafe => cafe.hasGreca).slice(0, 3);
   const newCafes = cafes.filter(cafe => cafe.isNew).slice(0, 3);
   return <div className="min-h-screen flex flex-col">
@@ -32,8 +37,8 @@ const Index = () => {
           
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto bg-card rounded-full shadow-elegant p-2 flex gap-2 animate-scale-in">
-            <Input type="text" placeholder="Buscar por ubicación o nombre..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} className="border-0 focus-visible:ring-0 text-lg" />
-            <Button size="lg" className="rounded-full px-8">
+            <Input type="text" placeholder="Buscar por ubicación o nombre..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} onKeyDown={e => e.key === "Enter" && handleSearch()} className="border-0 focus-visible:ring-0 text-lg" />
+            <Button size="lg" className="rounded-full px-8" onClick={handleSearch}>
               <Search className="h-5 w-5 mr-2" />
               Buscar
             </Button>

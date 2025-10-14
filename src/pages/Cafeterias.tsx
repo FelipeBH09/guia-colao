@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Filter, Search, SlidersHorizontal } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,11 +7,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { cafes } from "@/data/cafes";
+import { useSearchParams } from "react-router-dom";
 const Cafeterias = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [locationFilter, setLocationFilter] = useState("all");
   const [ratingFilter, setRatingFilter] = useState("all");
   const [grecaFilter, setGrecaFilter] = useState("all");
+  const [searchParams] = useSearchParams();
+  useEffect(() => {
+    const q = searchParams.get("q") || "";
+    setSearchQuery(q);
+  }, [searchParams]);
   const locations = ["all", ...new Set(cafes.map(cafe => cafe.location))];
   const filteredCafes = cafes.filter(cafe => {
     const matchesSearch = cafe.name.toLowerCase().includes(searchQuery.toLowerCase()) || cafe.location.toLowerCase().includes(searchQuery.toLowerCase());
