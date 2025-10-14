@@ -3,12 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CafeCard from "@/components/CafeCard";
 import { cafes } from "@/data/cafes";
-
 const Greca = () => {
-  const grecaCafes = cafes.filter((cafe) => cafe.hasGreca);
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  const grecaCafes = cafes.filter(cafe => cafe.hasGreca);
+  return <div className="min-h-screen flex flex-col">
       <Header />
 
       {/* Hero */}
@@ -25,9 +22,7 @@ const Greca = () => {
             El Reconocimiento Greca COLAO es el máximo reconocimiento otorgado por Guía Colao a cafeterías excepcionales con calificaciones de 4.5 a 5 estrellas y evaluado por nuestros inspectores autorizados
           </p>
           <div className="flex items-center justify-center gap-1">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className="h-8 w-8 fill-accent text-accent" />
-            ))}
+            {[1, 2, 3, 4, 5].map(star => <Star key={star} className="h-8 w-8 fill-accent text-accent" />)}
           </div>
         </div>
       </section>
@@ -94,21 +89,12 @@ const Greca = () => {
             <p className="text-lg text-muted-foreground mb-4">
               {grecaCafes.length} cafeterías excepcionales merecedoras de este prestigioso reconocimiento
             </p>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-sm text-muted-foreground italic">
-                Cafeterías reconocidas: Casa Barista & Co (Ciudad Colonial), Affogato Café (Ciudad Colonial, Calle Sánchez con Arzobispo Nouel), Sugar Mommy Café (Los Prados / Bella Vista, Santo Domingo) y Mr & Mrs Coffee (Sucursales en Gustavo Mejía Ricart y Av. Sarasota, Santo Domingo)
-              </p>
-            </div>
+            
           </div>
 
-          {grecaCafes.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {grecaCafes.map((cafe) => (
-                <CafeCard key={cafe.id} cafe={cafe} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16">
+          {grecaCafes.length > 0 ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {grecaCafes.map(cafe => <CafeCard key={cafe.id} cafe={cafe} />)}
+            </div> : <div className="text-center py-16">
               <Award className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
               <p className="text-xl text-muted-foreground mb-4">
                 Aún no hay cafeterías con el Reconocimiento Greca COLAO
@@ -116,14 +102,11 @@ const Greca = () => {
               <p className="text-muted-foreground">
                 Estamos evaluando los mejores establecimientos para otorgar este prestigioso premio
               </p>
-            </div>
-          )}
+            </div>}
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Greca;
