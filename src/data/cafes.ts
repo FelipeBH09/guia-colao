@@ -7,44 +7,30 @@ import cafe5 from "@/assets/cafe-5.jpg";
 import cafe6 from "@/assets/cafe-6.jpg";
 import cafe7 from "@/assets/cafe-7.jpg";
 import cafe8 from "@/assets/cafe-8.jpg";
-import cafe9 from "@/assets/cafe-9.jpg";
-import cafe10 from "@/assets/cafe-10.jpg";
-import cafe11 from "@/assets/cafe-11.jpg";
-import cafe12 from "@/assets/cafe-12.jpg";
+import casaBarista1 from "@/assets/casa-barista-1.jpg";
+import casaBarista2 from "@/assets/casa-barista-2.jpg";
+import casaBarista3 from "@/assets/casa-barista-3.jpg";
+import casaBarista4 from "@/assets/casa-barista-4.jpg";
+import casaBarista5 from "@/assets/casa-barista-5.jpg";
+import casaBarista6 from "@/assets/casa-barista-6.jpg";
+import casaBarista7 from "@/assets/casa-barista-7.jpg";
+import casaBarista8 from "@/assets/casa-barista-8.jpg";
+import casaBarista9 from "@/assets/casa-barista-9.jpg";
+import casaBarista10 from "@/assets/casa-barista-10.jpg";
 
 export const cafes: CafeData[] = [
   {
     id: 1,
-    name: "Café del Sol",
-    location: "Santo Domingo, Zona Colonial",
-    rating: 4.8,
-    image: cafe1,
-    description: "Ambiente acogedor con vistas al parque Colón. Especialidad en café orgánico dominicano y repostería artesanal.",
+    name: "Casa Barista & Co.",
+    location: "Ciudad Colonial, Santo Domingo",
+    rating: 4.6,
+    image: casaBarista1,
+    description: "Cafetería artesanal en el corazón de la Ciudad Colonial, con un ambiente cálido y un servicio que te hace sentir en casa.",
     isNew: false,
     hasGreca: true,
   },
   {
     id: 2,
-    name: "Aroma y Sabor",
-    location: "Santiago, Centro",
-    rating: 4.6,
-    image: cafe2,
-    description: "Moderna cafetería con enfoque en métodos de extracción alternativos. Ambiente minimalista y profesional.",
-    isNew: true,
-    hasGreca: true,
-  },
-  {
-    id: 3,
-    name: "La Taza Perfecta",
-    location: "Punta Cana, Bávaro",
-    rating: 4.5,
-    image: cafe3,
-    description: "Fusión de café gourmet y cocina internacional. Terraza con vista al mar y música en vivo los fines de semana.",
-    isNew: false,
-    hasGreca: true,
-  },
-  {
-    id: 4,
     name: "Espresso Bar",
     location: "Santo Domingo, Naco",
     rating: 4.3,
@@ -54,17 +40,7 @@ export const cafes: CafeData[] = [
     hasGreca: false,
   },
   {
-    id: 5,
-    name: "Café Colonial",
-    location: "Puerto Plata, Centro Histórico",
-    rating: 4.7,
-    image: cafe5,
-    description: "Café tradicional dominicano en casa colonial restaurada. Ambiente histórico con toques modernos.",
-    isNew: false,
-    hasGreca: true,
-  },
-  {
-    id: 6,
+    id: 3,
     name: "Bean & Brew",
     location: "Santo Domingo, Bella Vista",
     rating: 4.4,
@@ -74,17 +50,7 @@ export const cafes: CafeData[] = [
     hasGreca: false,
   },
   {
-    id: 7,
-    name: "Café Montaña",
-    location: "Jarabacoa, Centro",
-    rating: 4.9,
-    image: cafe7,
-    description: "Café de altura cultivado en las montañas de Jarabacoa. Tours de caficultura y degustaciones.",
-    isNew: false,
-    hasGreca: true,
-  },
-  {
-    id: 8,
+    id: 4,
     name: "Urban Coffee",
     location: "Santo Domingo, Gazcue",
     rating: 4.2,
@@ -94,47 +60,7 @@ export const cafes: CafeData[] = [
     hasGreca: false,
   },
   {
-    id: 9,
-    name: "Café Playa Dorada",
-    location: "Samaná, Las Terrenas",
-    rating: 4.6,
-    image: cafe9,
-    description: "Vista al océano con los mejores atardeceres. Especialidad en café frío y smoothies tropicales.",
-    isNew: false,
-    hasGreca: true,
-  },
-  {
-    id: 10,
-    name: "Tostadores Artesanales",
-    location: "Santo Domingo, Piantini",
-    rating: 4.8,
-    image: cafe10,
-    description: "Tostado en sitio con granos premium. Cursos de barismo y catas profesionales.",
-    isNew: true,
-    hasGreca: true,
-  },
-  {
-    id: 11,
-    name: "Jardín del Café",
-    location: "La Romana, Centro",
-    rating: 4.5,
-    image: cafe11,
-    description: "Oasis verde en el corazón de la ciudad. Terraza jardín con vegetación tropical.",
-    isNew: false,
-    hasGreca: true,
-  },
-  {
-    id: 12,
-    name: "Café Nórdico",
-    location: "Santo Domingo, Evaristo Morales",
-    rating: 4.7,
-    image: cafe12,
-    description: "Diseño escandinavo minimalista. Métodos de extracción nórdicos y pastelería danesa.",
-    isNew: true,
-    hasGreca: true,
-  },
-  {
-    id: 13,
+    id: 5,
     name: "El Rincón del Barista",
     location: "San Pedro de Macorís, Centro",
     rating: 4.4,
@@ -144,17 +70,7 @@ export const cafes: CafeData[] = [
     hasGreca: false,
   },
   {
-    id: 14,
-    name: "Café Bohemio",
-    location: "Santo Domingo, Zona Colonial",
-    rating: 4.6,
-    image: cafe2,
-    description: "Arte y café en perfecta armonía. Exposiciones mensuales y música acústica.",
-    isNew: true,
-    hasGreca: true,
-  },
-  {
-    id: 15,
+    id: 6,
     name: "Mocca House",
     location: "Boca Chica, Playa",
     rating: 4.3,
@@ -164,7 +80,7 @@ export const cafes: CafeData[] = [
     hasGreca: false,
   },
   {
-    id: 16,
+    id: 7,
     name: "Café Express Center",
     location: "Santiago, Los Jardines",
     rating: 4.5,
@@ -173,44 +89,17 @@ export const cafes: CafeData[] = [
     isNew: true,
     hasGreca: false,
   },
-  {
-    id: 17,
-    name: "La Cafetera Social",
-    location: "Santo Domingo, Arroyo Hondo",
-    rating: 4.7,
-    image: cafe5,
-    description: "Espacio comunitario con impacto social. Apoya productores locales de café.",
-    isNew: false,
-    hasGreca: true,
-  },
-  {
-    id: 18,
-    name: "Brew Lab",
-    location: "Santo Domingo, Serralles",
-    rating: 4.8,
-    image: cafe6,
-    description: "Laboratorio de café experimental. Técnicas innovadoras y ediciones limitadas.",
-    isNew: true,
-    hasGreca: true,
-  },
-  {
-    id: 19,
-    name: "Café Vista Verde",
-    location: "Constanza, Montañas",
-    rating: 4.9,
-    image: cafe7,
-    description: "Plantación y café en un solo lugar. Experiencia de granja a taza única.",
-    isNew: false,
-    hasGreca: true,
-  },
-  {
-    id: 20,
-    name: "The Coffee Project",
-    location: "Santo Domingo, Malecon",
-    rating: 4.6,
-    image: cafe8,
-    description: "Concepto vanguardista con vista al mar. Menú rotativo de cafés de origen único.",
-    isNew: true,
-    hasGreca: true,
-  },
+];
+
+export const casaBaristaGallery = [
+  casaBarista1,
+  casaBarista2,
+  casaBarista3,
+  casaBarista4,
+  casaBarista5,
+  casaBarista6,
+  casaBarista7,
+  casaBarista8,
+  casaBarista9,
+  casaBarista10,
 ];

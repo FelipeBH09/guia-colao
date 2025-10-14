@@ -1,4 +1,5 @@
 import { MapPin, Award } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
@@ -21,6 +22,16 @@ interface CafeCardProps {
 }
 
 const CafeCard = ({ cafe, onViewMore }: CafeCardProps) => {
+  const navigate = useNavigate();
+
+  const handleViewMore = () => {
+    if (onViewMore) {
+      onViewMore(cafe.id);
+    } else {
+      navigate(`/cafeterias/${cafe.id}`);
+    }
+  };
+
   return (
     <Card className="group overflow-hidden hover:shadow-elegant transition-smooth animate-scale-in">
       <div className="relative h-48 overflow-hidden">
@@ -60,7 +71,7 @@ const CafeCard = ({ cafe, onViewMore }: CafeCardProps) => {
         <Button
           variant="default"
           className="w-full mt-4"
-          onClick={() => onViewMore?.(cafe.id)}
+          onClick={handleViewMore}
         >
           Ver más
         </Button>
