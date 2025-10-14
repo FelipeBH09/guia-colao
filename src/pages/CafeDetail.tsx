@@ -1,15 +1,19 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, Award, MapPin, Star } from "lucide-react";
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { cafes, casaBaristaGallery } from "@/data/cafes";
+import { cafes, casaBaristaGallery, affogatoGallery } from "@/data/cafes";
 import StarRating from "@/components/StarRating";
+import ImageLightbox from "@/components/ImageLightbox";
 
 const CafeDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const cafe = cafes.find((c) => c.id === Number(id));
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   if (!cafe) {
     return (
@@ -28,14 +32,47 @@ const CafeDetail = () => {
     );
   }
 
-  // Only Casa Barista & Co. has the detailed view
-  const isCasaBarista = cafe.id === 1;
+  // Define cafe details based on ID
+  const cafeDetails = {
+    1: {
+      gallery: casaBaristaGallery,
+      description: [
+        "Casabarista & Co. es una cafetería artesanal ubicada en la Ciudad Colonial de Santo Domingo. Su encanto radica en su ambiente acogedor, donde el diseño rústico y los tonos cálidos se combinan con un servicio atento y cercano.",
+        "El espacio conserva paredes de ladrillo y una iluminación tenue que resalta la textura natural del local, creando una atmósfera perfecta para disfrutar de un buen café o una comida ligera.",
+        "El personal destaca por su trato amable y su conocimiento del menú. Durante la visita, el camarero explicó con detalle los ingredientes de cada plato, incluyendo aquellos que no aparecen descritos en profundidad en el menú, mostrando disposición para adaptarse a las preferencias del cliente.",
+        "El menú ofrece una variedad de cafés artesanales, acompañados de repostería fresca y opciones de brunch que reflejan un equilibrio entre lo clásico y lo moderno.",
+        "Casa Barista Co. se ha ganado un lugar especial en la escena cafetera dominicana, combinando calidad, servicio y autenticidad en cada experiencia."
+      ],
+      score: 95,
+      title: "Casa Barista & Co."
+    },
+    2: {
+      gallery: affogatoGallery,
+      description: [
+        "Affogato Café se encuentra en una esquina emblemática de la Ciudad Colonial, donde la historia y el arte se funden con el aroma del café recién hecho.",
+        "Su diseño mezcla lo moderno con lo clásico: mesas de madera clara, paredes de tonos neutros y una iluminación cálida que invita a la conversación tranquila.",
+        "El ambiente es relajado y bien cuidado, ideal para quienes buscan una experiencia pausada y de calidad.",
+        "El servicio al cliente es excelente: los camareros son atentos, educados y conocen a fondo el menú, explicando con detalle cada bebida y plato disponible.",
+        "Durante la visita, se observó un trato personalizado, con sugerencias acertadas y disposición para ajustar ingredientes según preferencias.",
+        "El menú ofrece cafés de autor, bebidas frías y postres, destacando la preparación del clásico affogato, que da nombre al local.",
+        "Affogato Café combina una propuesta de sabor elegante con un ambiente auténtico, consolidándose como una de las joyas cafeteras de la Ciudad Colonial."
+      ],
+      score: 93,
+      title: "Affogato Café"
+    }
+  };
 
-  if (!isCasaBarista) {
-    // For other cafes, redirect back or show basic info
+  const currentCafeDetails = cafeDetails[cafe.id as keyof typeof cafeDetails];
+  
+  if (!currentCafeDetails) {
     navigate("/cafeterias");
     return null;
   }
+
+  const handleImageClick = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -94,10 +131,11 @@ const CafeDetail = () => {
               Galería de Fotos
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {casaBaristaGallery.map((image, index) => (
+              {currentCafeDetails.gallery.map((image, index) => (
                 <div
                   key={index}
-                  className="overflow-hidden rounded-xl shadow-elegant hover:scale-105 transition-smooth"
+                  className="overflow-hidden rounded-xl shadow-elegant hover:scale-105 transition-smooth cursor-pointer"
+                  onClick={() => handleImageClick(index)}
                 >
                   <img
                     src={image}
@@ -116,24 +154,12 @@ const CafeDetail = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold font-serif mb-6">
-              Sobre Casa Barista & Co.
+              Sobre {currentCafeDetails.title}
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Casabarista & Co. es una cafetería artesanal ubicada en la Ciudad Colonial de Santo Domingo. Su encanto radica en su ambiente acogedor, donde el diseño rústico y los tonos cálidos se combinan con un servicio atento y cercano.
-              </p>
-              <p>
-                El espacio conserva paredes de ladrillo y una iluminación tenue que resalta la textura natural del local, creando una atmósfera perfecta para disfrutar de un buen café o una comida ligera.
-              </p>
-              <p>
-                El personal destaca por su trato amable y su conocimiento del menú. Durante la visita, el camarero explicó con detalle los ingredientes de cada plato, incluyendo aquellos que no aparecen descritos en profundidad en el menú, mostrando disposición para adaptarse a las preferencias del cliente.
-              </p>
-              <p>
-                El menú ofrece una variedad de cafés artesanales, acompañados de repostería fresca y opciones de brunch que reflejan un equilibrio entre lo clásico y lo moderno.
-              </p>
-              <p>
-                Casa Barista Co. se ha ganado un lugar especial en la escena cafetera dominicana, combinando calidad, servicio y autenticidad en cada experiencia.
-              </p>
+              {currentCafeDetails.description.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
             </div>
           </div>
         </div>
@@ -192,7 +218,7 @@ const CafeDetail = () => {
               <p className="text-sm uppercase tracking-wider text-primary/80 mb-2">
                 Puntuación Total
               </p>
-              <p className="text-6xl font-bold text-primary mb-2">95</p>
+              <p className="text-6xl font-bold text-primary mb-2">{currentCafeDetails.score}</p>
               <p className="text-2xl text-primary/90">de 100</p>
             </div>
           </div>
@@ -210,7 +236,7 @@ const CafeDetail = () => {
               <div className="bg-secondary rounded-xl p-6 text-center">
                 <MapPin className="h-8 w-8 mx-auto mb-3 text-accent" />
                 <h3 className="font-bold mb-2">Ciudad</h3>
-                <p className="text-muted-foreground">Ciudad Colonial, Santo Domingo</p>
+                <p className="text-muted-foreground">{cafe.location}</p>
               </div>
 
               <div className="bg-secondary rounded-xl p-6 text-center">
@@ -244,6 +270,15 @@ const CafeDetail = () => {
       </section>
 
       <Footer />
+
+      {lightboxOpen && (
+        <ImageLightbox
+          images={currentCafeDetails.gallery}
+          currentIndex={lightboxIndex}
+          onClose={() => setLightboxOpen(false)}
+          altPrefix={cafe.name}
+        />
+      )}
     </div>
   );
 };

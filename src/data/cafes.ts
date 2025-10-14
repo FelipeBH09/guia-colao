@@ -17,6 +17,16 @@ import casaBarista7 from "@/assets/casa-barista-7.jpg";
 import casaBarista8 from "@/assets/casa-barista-8.jpg";
 import casaBarista9 from "@/assets/casa-barista-9.jpg";
 import casaBarista10 from "@/assets/casa-barista-10.jpg";
+import affogato1 from "@/assets/affogato-1.jpg";
+import affogato2 from "@/assets/affogato-2.jpg";
+import affogato3 from "@/assets/affogato-3.jpg";
+import affogato4 from "@/assets/affogato-4.jpg";
+import affogato5 from "@/assets/affogato-5.jpg";
+import affogato6 from "@/assets/affogato-6.jpg";
+import affogato7 from "@/assets/affogato-7.jpg";
+import affogato8 from "@/assets/affogato-8.jpg";
+import affogato9 from "@/assets/affogato-9.jpg";
+import affogato10 from "@/assets/affogato-10.jpg";
 
 export const cafes: CafeData[] = [
   {
@@ -26,6 +36,16 @@ export const cafes: CafeData[] = [
     rating: 4.6,
     image: casaBarista1,
     description: "Cafetería artesanal en el corazón de la Ciudad Colonial, con un ambiente cálido y un servicio que te hace sentir en casa.",
+    isNew: false,
+    hasGreca: true,
+  },
+  {
+    id: 2,
+    name: "Affogato Café",
+    location: "Calle Sánchez esquina Arzobispo Nouel, Ciudad Colonial, Santo Domingo",
+    rating: 4.5,
+    image: affogato1,
+    description: "Cafetería con encanto moderno y ambiente íntimo en la Ciudad Colonial, ideal para disfrutar cafés artesanales y postres inspirados en la tradición italiana.",
     isNew: false,
     hasGreca: true,
   },
@@ -102,4 +122,17 @@ export const casaBaristaGallery = [
   casaBarista8,
   casaBarista9,
   casaBarista10,
+];
+
+export const affogatoGallery = [
+  affogato1,
+  affogato2,
+  affogato3,
+  affogato4,
+  affogato5,
+  affogato6,
+  affogato7,
+  affogato8,
+  affogato9,
+  affogato10,
 ];
