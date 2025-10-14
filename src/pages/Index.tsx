@@ -37,7 +37,7 @@ const Index = () => {
           
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto bg-card rounded-full shadow-elegant p-2 flex gap-2 animate-scale-in">
-            <Input type="text" placeholder="Buscar por ubicación o nombre..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} onKeyDown={e => e.key === "Enter" && handleSearch()} className="border-0 focus-visible:ring-0 text-lg" />
+            <Input type="text" placeholder="Buscar por ubicación o nombre..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} onKeyDown={e => e.key === "Enter" && handleSearch()} className="border-0 focus-visible:ring-0 text-lg text-foreground" />
             <Button size="lg" className="rounded-full px-8" onClick={handleSearch}>
               <Search className="h-5 w-5 mr-2" />
               Buscar
