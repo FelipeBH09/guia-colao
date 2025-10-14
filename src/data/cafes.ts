@@ -37,6 +37,16 @@ import sugarMommy7 from "@/assets/sugar-mommy-7.jpg";
 import sugarMommy8 from "@/assets/sugar-mommy-8.jpg";
 import sugarMommy9 from "@/assets/sugar-mommy-9.jpg";
 import sugarMommy10 from "@/assets/sugar-mommy-10.jpg";
+import mrMrsCoffee1 from "@/assets/mr-mrs-coffee-1.jpg";
+import mrMrsCoffee2 from "@/assets/mr-mrs-coffee-2.jpg";
+import mrMrsCoffee3 from "@/assets/mr-mrs-coffee-3.jpg";
+import mrMrsCoffee4 from "@/assets/mr-mrs-coffee-4.jpg";
+import mrMrsCoffee5 from "@/assets/mr-mrs-coffee-5.jpg";
+import mrMrsCoffee6 from "@/assets/mr-mrs-coffee-6.jpg";
+import mrMrsCoffee7 from "@/assets/mr-mrs-coffee-7.jpg";
+import mrMrsCoffee8 from "@/assets/mr-mrs-coffee-8.jpg";
+import mrMrsCoffee9 from "@/assets/mr-mrs-coffee-9.jpg";
+import mrMrsCoffee10 from "@/assets/mr-mrs-coffee-10.jpg";
 
 export const cafes: CafeData[] = [
   {
@@ -66,6 +76,16 @@ export const cafes: CafeData[] = [
     rating: 4.5,
     image: sugarMommy1,
     description: "Una cafetería rosa y encantadora en Santo Domingo, ideal para fotos, postres y brunchs llenos de color y dulzura.",
+    isNew: false,
+    hasGreca: true,
+  },
+  {
+    id: 11,
+    name: "Mr & Mrs Coffee",
+    location: "El Millón y Bella Vista, Santo Domingo",
+    rating: 4.5,
+    image: mrMrsCoffee1,
+    description: "Un espacio moderno y acogedor ideal para brunch y café, con dos sucursales en Santo Domingo.",
     isNew: false,
     hasGreca: true,
   },
@@ -168,4 +188,17 @@ export const sugarMommyGallery = [
   sugarMommy8,
   sugarMommy9,
   sugarMommy10,
+];
+
+export const mrMrsCoffeeGallery = [
+  mrMrsCoffee1,
+  mrMrsCoffee2,
+  mrMrsCoffee3,
+  mrMrsCoffee4,
+  mrMrsCoffee5,
+  mrMrsCoffee6,
+  mrMrsCoffee7,
+  mrMrsCoffee8,
+  mrMrsCoffee9,
+  mrMrsCoffee10,
 ];

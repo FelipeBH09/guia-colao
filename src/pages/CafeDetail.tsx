@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { cafes, casaBaristaGallery, affogatoGallery, sugarMommyGallery } from "@/data/cafes";
+import { cafes, casaBaristaGallery, affogatoGallery, sugarMommyGallery, mrMrsCoffeeGallery } from "@/data/cafes";
 import StarRating from "@/components/StarRating";
 import ImageLightbox from "@/components/ImageLightbox";
 
@@ -72,6 +72,20 @@ const CafeDetail = () => {
       ],
       score: 95,
       title: "Sugar Mommy Café"
+    },
+    11: {
+      gallery: mrMrsCoffeeGallery,
+      description: [
+        "Mr & Mrs Coffee es una cafetería moderna, acogedora y con un estilo clásico contemporáneo que invita a quedarse.",
+        "Ubicada en El Millón y Bella Vista, ambas sucursales ofrecen una experiencia perfecta para el brunch o para compartir entre amigos.",
+        "Su decoración es cálida, cuidada al detalle, con áreas cómodas para conversar o trabajar, y una terraza amplia que complementa su ambiente relajado.",
+        "En su menú destacan bebidas frías y creativas como el Tres Leches Iced Coffee y el Cookies n' Cream Coffee, además de opciones de desayuno tradicional dominicano —como el mangú con los tres golpes, wraps, panes artesanales, brownies y más.",
+        "El servicio es atento, amable y personalizado, con un personal que conoce el menú y se esfuerza por crear una experiencia agradable.",
+        "También ofrecen juegos de mesa y detalles pensados para que cada visita sea única y entretenida.",
+        "Su equilibrio entre modernidad, confort y calidad lo convierte en uno de los spots de café más recomendados de Santo Domingo."
+      ],
+      score: 90,
+      title: "Mr & Mrs Coffee"
     }
   };
 
