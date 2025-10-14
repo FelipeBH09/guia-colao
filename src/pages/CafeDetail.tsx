@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { cafes, casaBaristaGallery, affogatoGallery } from "@/data/cafes";
+import { cafes, casaBaristaGallery, affogatoGallery, sugarMommyGallery } from "@/data/cafes";
 import StarRating from "@/components/StarRating";
 import ImageLightbox from "@/components/ImageLightbox";
 
@@ -59,6 +59,19 @@ const CafeDetail = () => {
       ],
       score: 93,
       title: "Affogato Café"
+    },
+    3: {
+      gallery: sugarMommyGallery,
+      description: [
+        "Sugar Mommy Café es una de las cafeterías más icónicas y visuales de Santo Domingo, ubicada entre Los Prados y Bella Vista.",
+        "Su propuesta combina el mundo del café con la repostería artesanal y un ambiente completamente rosa y romántico, pensado para experiencias instagrameables y momentos especiales.",
+        "Desde sus paredes color pastel hasta los detalles florales y los muebles de diseño dulce, cada rincón está hecho para disfrutar y fotografiar.",
+        "Ofrecen postres, desayunos, brunchs y productos decorativos como fresas con chocolate, brownies, bowls de frutas y bebidas frías con estética única.",
+        "El servicio es amable, rápido y muy atento, ideal para quienes buscan un espacio alegre y diferente.",
+        "Sugar Mommy Café es más que una cafetería: es una experiencia sensorial donde el ambiente, los sabores y la estética se unen en una atmósfera dulce y memorable."
+      ],
+      score: 95,
+      title: "Sugar Mommy Café"
     }
   };
 

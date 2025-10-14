@@ -27,6 +27,16 @@ import affogato7 from "@/assets/affogato-7.jpg";
 import affogato8 from "@/assets/affogato-8.jpg";
 import affogato9 from "@/assets/affogato-9.jpg";
 import affogato10 from "@/assets/affogato-10.jpg";
+import sugarMommy1 from "@/assets/sugar-mommy-1.jpg";
+import sugarMommy2 from "@/assets/sugar-mommy-2.jpg";
+import sugarMommy3 from "@/assets/sugar-mommy-3.jpg";
+import sugarMommy4 from "@/assets/sugar-mommy-4.jpg";
+import sugarMommy5 from "@/assets/sugar-mommy-5.jpg";
+import sugarMommy6 from "@/assets/sugar-mommy-6.jpg";
+import sugarMommy7 from "@/assets/sugar-mommy-7.jpg";
+import sugarMommy8 from "@/assets/sugar-mommy-8.jpg";
+import sugarMommy9 from "@/assets/sugar-mommy-9.jpg";
+import sugarMommy10 from "@/assets/sugar-mommy-10.jpg";
 
 export const cafes: CafeData[] = [
   {
@@ -50,7 +60,17 @@ export const cafes: CafeData[] = [
     hasGreca: true,
   },
   {
-    id: 2,
+    id: 3,
+    name: "Sugar Mommy Café",
+    location: "Zona de Los Prados / Bella Vista, Santo Domingo",
+    rating: 4.5,
+    image: sugarMommy1,
+    description: "Una cafetería rosa y encantadora en Santo Domingo, ideal para fotos, postres y brunchs llenos de color y dulzura.",
+    isNew: false,
+    hasGreca: true,
+  },
+  {
+    id: 4,
     name: "Espresso Bar",
     location: "Santo Domingo, Naco",
     rating: 4.3,
@@ -135,4 +155,17 @@ export const affogatoGallery = [
   affogato8,
   affogato9,
   affogato10,
+];
+
+export const sugarMommyGallery = [
+  sugarMommy1,
+  sugarMommy2,
+  sugarMommy3,
+  sugarMommy4,
+  sugarMommy5,
+  sugarMommy6,
+  sugarMommy7,
+  sugarMommy8,
+  sugarMommy9,
+  sugarMommy10,
 ];
