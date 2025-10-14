@@ -1,4 +1,4 @@
-import { MapPin, Coffee } from "lucide-react";
+import { MapPin, Coffee, Award } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -42,7 +42,7 @@ const CafeCard = ({ cafe, onViewMore }: CafeCardProps) => {
         />
         {cafe.hasGreca && (
           <div className="absolute top-3 right-3 bg-accent text-primary px-3 py-1.5 rounded-full shadow-gold flex items-center gap-1.5">
-            <Coffee className="h-5 w-5" />
+            <Award className="h-5 w-5" />
             <span className="text-sm font-semibold">Greca COLAO</span>
           </div>
         )}
