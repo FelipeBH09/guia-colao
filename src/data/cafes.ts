@@ -47,6 +47,16 @@ import mrMrsCoffee7 from "@/assets/mr-mrs-coffee-7.jpg";
 import mrMrsCoffee8 from "@/assets/mr-mrs-coffee-8.jpg";
 import mrMrsCoffee9 from "@/assets/mr-mrs-coffee-9.jpg";
 import mrMrsCoffee10 from "@/assets/mr-mrs-coffee-10.jpg";
+import realCafe1 from "@/assets/real-cafe-1.jpg";
+import realCafe2 from "@/assets/real-cafe-2.jpg";
+import realCafe3 from "@/assets/real-cafe-3.jpg";
+import realCafe4 from "@/assets/real-cafe-4.jpg";
+import realCafe5 from "@/assets/real-cafe-5.jpg";
+import realCafe6 from "@/assets/real-cafe-6.jpg";
+import realCafe7 from "@/assets/real-cafe-7.jpg";
+import realCafe8 from "@/assets/real-cafe-8.jpg";
+import realCafe9 from "@/assets/real-cafe-9.jpg";
+import realCafe10 from "@/assets/real-cafe-10.jpg";
 
 export const cafes: CafeData[] = [
   {
@@ -94,7 +104,7 @@ export const cafes: CafeData[] = [
     name: "Espresso Bar",
     location: "Santo Domingo, Naco",
     rating: 4.3,
-    image: cafe4,
+    image: realCafe1,
     description: "Cafetería boutique especializada en espresso italiano. Baristas certificados y granos de importación.",
     isNew: true,
     hasGreca: false,
@@ -104,7 +114,7 @@ export const cafes: CafeData[] = [
     name: "Bean & Brew",
     location: "Santo Domingo, Bella Vista",
     rating: 4.4,
-    image: cafe6,
+    image: realCafe2,
     description: "Espacio de co-working con excelente café. Ambiente relajado ideal para trabajar o estudiar.",
     isNew: true,
     hasGreca: false,
@@ -114,7 +124,7 @@ export const cafes: CafeData[] = [
     name: "Urban Coffee",
     location: "Santo Domingo, Gazcue",
     rating: 4.2,
-    image: cafe8,
+    image: realCafe3,
     description: "Cafetería moderna con arte urbano. Menú innovador con opciones veganas y sin gluten.",
     isNew: true,
     hasGreca: false,
@@ -124,7 +134,7 @@ export const cafes: CafeData[] = [
     name: "El Rincón del Barista",
     location: "San Pedro de Macorís, Centro",
     rating: 4.4,
-    image: cafe1,
+    image: realCafe4,
     description: "Cafetería familiar con tradición de tres generaciones. Café criollo y repostería casera.",
     isNew: false,
     hasGreca: false,
@@ -134,7 +144,7 @@ export const cafes: CafeData[] = [
     name: "Mocca House",
     location: "Boca Chica, Playa",
     rating: 4.3,
-    image: cafe3,
+    image: realCafe5,
     description: "Cafetería frente al mar con ambiente caribeño. Especialidad en bebidas con chocolate.",
     isNew: false,
     hasGreca: false,
@@ -144,7 +154,7 @@ export const cafes: CafeData[] = [
     name: "Café Express Center",
     location: "Santiago, Los Jardines",
     rating: 4.5,
-    image: cafe4,
+    image: realCafe6,
     description: "Servicio rápido sin sacrificar calidad. Ideal para profesionales en movimiento.",
     isNew: true,
     hasGreca: false,
@@ -154,7 +164,7 @@ export const cafes: CafeData[] = [
     name: "Café Montaña",
     location: "Jarabacoa, Centro",
     rating: 4.6,
-    image: cafe5,
+    image: realCafe7,
     description: "Café de altura cultivado localmente. Vistas espectaculares de las montañas dominicanas.",
     isNew: false,
     hasGreca: false,
@@ -164,7 +174,7 @@ export const cafes: CafeData[] = [
     name: "Latte Art Studio",
     location: "Santo Domingo, Piantini",
     rating: 4.3,
-    image: cafe2,
+    image: realCafe8,
     description: "Especialistas en latte art. Cada taza es una obra de arte con sabores excepcionales.",
     isNew: false,
     hasGreca: false,
@@ -174,7 +184,7 @@ export const cafes: CafeData[] = [
     name: "Café del Parque",
     location: "Santo Domingo, Zona Colonial",
     rating: 4.1,
-    image: cafe7,
+    image: realCafe9,
     description: "Terraza con vista al parque. Perfecto para disfrutar un café mientras observas la ciudad.",
     isNew: false,
     hasGreca: false,
@@ -184,7 +194,7 @@ export const cafes: CafeData[] = [
     name: "The Coffee Lab",
     location: "Santiago, Centro",
     rating: 4.4,
-    image: cafe3,
+    image: realCafe10,
     description: "Experimentación con métodos de preparación. Para los verdaderos amantes del café.",
     isNew: true,
     hasGreca: false,
