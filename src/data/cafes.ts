@@ -57,6 +57,16 @@ import realCafe7 from "@/assets/real-cafe-7.jpg";
 import realCafe8 from "@/assets/real-cafe-8.jpg";
 import realCafe9 from "@/assets/real-cafe-9.jpg";
 import realCafe10 from "@/assets/real-cafe-10.jpg";
+import realCafe11 from "@/assets/real-cafe-11.jpg";
+import realCafe12 from "@/assets/real-cafe-12.jpg";
+import realCafe13 from "@/assets/real-cafe-13.jpg";
+import realCafe14 from "@/assets/real-cafe-14.jpg";
+import realCafe15 from "@/assets/real-cafe-15.jpg";
+import realCafe16 from "@/assets/real-cafe-16.jpg";
+import realCafe17 from "@/assets/real-cafe-17.jpg";
+import realCafe18 from "@/assets/real-cafe-18.jpg";
+import realCafe19 from "@/assets/real-cafe-19.jpg";
+import realCafe20 from "@/assets/real-cafe-20.jpg";
 
 export const cafes: CafeData[] = [
   {
@@ -204,7 +214,7 @@ export const cafes: CafeData[] = [
     name: "Caribe Coffee Shop",
     location: "La Romana, Marina",
     rating: 4.0,
-    image: cafe6,
+    image: realCafe11,
     description: "Ambiente marino y relajado. Bebidas tropicales con café dominicano de calidad.",
     isNew: false,
     hasGreca: false,
@@ -214,7 +224,7 @@ export const cafes: CafeData[] = [
     name: "Café Literario",
     location: "Santo Domingo, Gazcue",
     rating: 3.9,
-    image: cafe8,
+    image: realCafe12,
     description: "Librería y cafetería combinadas. Espacio cultural con eventos literarios semanales.",
     isNew: false,
     hasGreca: false,
@@ -224,7 +234,7 @@ export const cafes: CafeData[] = [
     name: "Aroma Coffee House",
     location: "Puerto Plata, Malecón",
     rating: 4.2,
-    image: cafe1,
+    image: realCafe13,
     description: "Vista al océano Atlántico. Café recién tostado con repostería artesanal.",
     isNew: false,
     hasGreca: false,
@@ -234,7 +244,7 @@ export const cafes: CafeData[] = [
     name: "Dulce Café",
     location: "San Cristóbal, Centro",
     rating: 3.8,
-    image: cafe4,
+    image: realCafe14,
     description: "Especialidad en postres y café dulce. Ambiente familiar y acogedor.",
     isNew: false,
     hasGreca: false,
@@ -244,7 +254,7 @@ export const cafes: CafeData[] = [
     name: "Café Bohemio",
     location: "Santo Domingo, Zona Colonial",
     rating: 4.1,
-    image: cafe5,
+    image: realCafe15,
     description: "Ambiente artístico y bohemio. Música en vivo los fines de semana.",
     isNew: false,
     hasGreca: false,
@@ -254,7 +264,7 @@ export const cafes: CafeData[] = [
     name: "Morning Glory Café",
     location: "Punta Cana, Bávaro",
     rating: 4.3,
-    image: cafe2,
+    image: realCafe16,
     description: "Desayunos completos y café premium. Ideal para comenzar el día en el paraíso.",
     isNew: true,
     hasGreca: false,
@@ -264,7 +274,7 @@ export const cafes: CafeData[] = [
     name: "Café de las Flores",
     location: "Constanza, Centro",
     rating: 4.2,
-    image: cafe7,
+    image: realCafe17,
     description: "Rodeado de campos de flores. Café orgánico cultivado en la zona.",
     isNew: false,
     hasGreca: false,
@@ -274,7 +284,7 @@ export const cafes: CafeData[] = [
     name: "Central Perk RD",
     location: "Santo Domingo, Naco",
     rating: 4.0,
-    image: cafe3,
+    image: realCafe18,
     description: "Inspirado en la famosa serie. Ambiente juvenil y divertido con excelente café.",
     isNew: false,
     hasGreca: false,
@@ -284,7 +294,7 @@ export const cafes: CafeData[] = [
     name: "Café Tradicional",
     location: "Moca, Centro",
     rating: 3.7,
-    image: cafe6,
+    image: realCafe19,
     description: "Recetas tradicionales dominicanas. Café colado al estilo antiguo.",
     isNew: false,
     hasGreca: false,
@@ -294,7 +304,7 @@ export const cafes: CafeData[] = [
     name: "Skyline Coffee",
     location: "Santo Domingo, Torre Corporativa",
     rating: 4.2,
-    image: cafe8,
+    image: realCafe20,
     description: "Cafetería en las alturas con vistas panorámicas. Ambiente ejecutivo y moderno.",
     isNew: true,
     hasGreca: false,
