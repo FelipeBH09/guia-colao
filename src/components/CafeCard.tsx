@@ -34,14 +34,14 @@ const CafeCard = ({ cafe, onViewMore }: CafeCardProps) => {
 
   return (
     <Card 
-      className="group overflow-hidden hover:shadow-elegant transition-smooth animate-scale-in cursor-pointer"
-      onClick={handleViewMore}
+      className={`group overflow-hidden hover:shadow-elegant transition-smooth animate-scale-in ${cafe.hasGreca ? 'cursor-pointer' : 'cursor-default'}`}
+      onClick={cafe.hasGreca ? handleViewMore : undefined}
     >
       <div className="relative h-48 overflow-hidden">
         <img
           src={cafe.image}
           alt={cafe.name}
-          className="w-full h-full object-cover transition-smooth group-hover:scale-110"
+          className={`w-full h-full object-cover transition-smooth ${cafe.hasGreca ? 'group-hover:scale-110' : ''}`}
         />
         {cafe.hasGreca && (
           <div className="absolute top-3 right-3 bg-accent text-primary px-3 py-1.5 rounded-full shadow-gold flex items-center gap-1.5">
@@ -74,9 +74,12 @@ const CafeCard = ({ cafe, onViewMore }: CafeCardProps) => {
         <Button
           variant="default"
           className="w-full mt-4"
+          disabled={!cafe.hasGreca}
           onClick={(e) => {
             e.stopPropagation();
-            handleViewMore();
+            if (cafe.hasGreca) {
+              handleViewMore();
+            }
           }}
         >
           Ver más
