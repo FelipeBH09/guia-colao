@@ -40,7 +40,7 @@ const Cafeterias = () => {
             Todas las Cafeterías
           </h1>
           <p className="text-xl max-w-2xl mx-auto text-accent font-medium">
-            Explora nuestra selección completa de cafeterías evaluadas
+            Explora nuestra selección completa de cafeterías
           </p>
         </div>
       </section>
