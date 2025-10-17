@@ -43,7 +43,7 @@ const CafeDetail = () => {
         "El menú ofrece una variedad de cafés artesanales, acompañados de repostería fresca y opciones de brunch que reflejan un equilibrio entre lo clásico y lo moderno.",
         "Casa Barista Co. se ha ganado un lugar especial en la escena cafetera dominicana, combinando calidad, servicio y autenticidad en cada experiencia."
       ],
-      score: 95,
+      score: 96,
       title: "Casa Barista & Co."
     },
     2: {
