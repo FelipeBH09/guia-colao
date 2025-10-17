@@ -143,7 +143,7 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-warm text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold font-serif mb-6 text-orange-900">
+          <h2 className="text-4xl font-bold font-serif mb-6 text-primary">
             ¿Conoces una cafetería excepcional?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 text-yellow-600">
