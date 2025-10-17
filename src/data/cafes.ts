@@ -466,7 +466,7 @@ export const cafes: CafeData[] = [
     rating: 4.1,
     image: realCafe16,
     description: "Enfoque en salud y bienestar. Opciones orgánicas y superfoods.",
-    isNew: true,
+    isNew: false,
     hasGreca: false,
   },
   {
