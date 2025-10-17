@@ -18,7 +18,7 @@ const Nuevas = () => {
             <TrendingUp className="h-5 w-5" />
             <span className="font-semibold">Recién Llegadas</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 text-amber-900">
+          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 text-primary">
             Nuevas Cafeterías
           </h1>
           <p className="text-xl max-w-2xl mx-auto text-accent font-medium">

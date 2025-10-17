@@ -29,7 +29,7 @@ const SobreNosotros = () => {
             <Coffee className="h-5 w-5" />
             <span className="font-semibold">Nuestra Historia</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 animate-fade-in text-amber-900">
+          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 animate-fade-in text-primary">
             Sobre Guía Colao
           </h1>
           <p className="text-xl max-w-3xl mx-auto opacity-90 text-yellow-600">

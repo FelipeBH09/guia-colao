@@ -36,7 +36,7 @@ const Cafeterias = () => {
       {/* Hero */}
       <section className="py-16 bg-gradient-warm text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 text-orange-900">
+          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-6 text-primary">
             Todas las Cafeterías
           </h1>
           <p className="text-xl max-w-2xl mx-auto text-accent font-medium">
