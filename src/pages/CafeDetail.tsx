@@ -110,7 +110,7 @@ const CafeDetail = () => {
         <div className="container mx-auto px-4">
           <Button
             variant="ghost"
-            onClick={() => navigate("/cafeterias")}
+            onClick={() => navigate(cafe.hasGreca ? "/greca" : "/cafeterias")}
             className="mb-6 text-primary hover:text-primary/80"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
@@ -287,7 +287,7 @@ const CafeDetail = () => {
         <div className="container mx-auto px-4 text-center">
           <Button
             size="lg"
-            onClick={() => navigate("/cafeterias")}
+            onClick={() => navigate(cafe.hasGreca ? "/greca" : "/cafeterias")}
             className="text-lg px-8"
           >
             <ArrowLeft className="h-5 w-5 mr-2" />

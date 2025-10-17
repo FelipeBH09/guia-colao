@@ -33,7 +33,10 @@ const CafeCard = ({ cafe, onViewMore }: CafeCardProps) => {
   };
 
   return (
-    <Card className="group overflow-hidden hover:shadow-elegant transition-smooth animate-scale-in">
+    <Card 
+      className="group overflow-hidden hover:shadow-elegant transition-smooth animate-scale-in cursor-pointer"
+      onClick={handleViewMore}
+    >
       <div className="relative h-48 overflow-hidden">
         <img
           src={cafe.image}
@@ -71,7 +74,10 @@ const CafeCard = ({ cafe, onViewMore }: CafeCardProps) => {
         <Button
           variant="default"
           className="w-full mt-4"
-          onClick={handleViewMore}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleViewMore();
+          }}
         >
           Ver más
         </Button>

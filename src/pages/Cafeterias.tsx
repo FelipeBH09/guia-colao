@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { cafes } from "@/data/cafes";
 import { useSearchParams } from "react-router-dom";
+import { useFuzzySearch } from "@/hooks/useFuzzySearch";
 const Cafeterias = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [locationFilter, setLocationFilter] = useState("all");
@@ -19,12 +20,15 @@ const Cafeterias = () => {
     setSearchQuery(q);
   }, [searchParams]);
   const locations = ["all", ...new Set(cafes.map(cafe => cafe.location))];
-  const filteredCafes = cafes.filter(cafe => {
-    const matchesSearch = cafe.name.toLowerCase().includes(searchQuery.toLowerCase()) || cafe.location.toLowerCase().includes(searchQuery.toLowerCase());
+  
+  // Usar fuzzy search para búsqueda inteligente
+  const searchedCafes = useFuzzySearch(cafes, searchQuery);
+  
+  const filteredCafes = searchedCafes.filter(cafe => {
     const matchesLocation = locationFilter === "all" || cafe.location === locationFilter;
     const matchesRating = ratingFilter === "all" || ratingFilter === "3.5+" && cafe.rating >= 3.5 || ratingFilter === "4+" && cafe.rating >= 4 || ratingFilter === "4.5+" && cafe.rating >= 4.5;
     const matchesGreca = grecaFilter === "all" || grecaFilter === "true" && cafe.hasGreca || grecaFilter === "false" && !cafe.hasGreca;
-    return matchesSearch && matchesLocation && matchesRating && matchesGreca;
+    return matchesLocation && matchesRating && matchesGreca;
   }).sort((a, b) => b.rating - a.rating);
   return <div className="min-h-screen flex flex-col">
       <Header />

@@ -15,9 +15,28 @@ const Contacto = () => {
   });
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Crear mensaje para WhatsApp
+    const whatsappMessage = `*Nueva recomendación de cafetería*\n\n` +
+      `*Nombre:* ${formData.name}\n` +
+      `*Email:* ${formData.email}\n` +
+      `*Asunto:* ${formData.subject}\n` +
+      `*Mensaje:* ${formData.message}`;
+    
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const phone1 = "18294998775";
+    const phone2 = "18094091572";
+    
+    // Abrir WhatsApp en ambos números
+    window.open(`https://wa.me/${phone1}?text=${encodedMessage}`, '_blank');
+    setTimeout(() => {
+      window.open(`https://wa.me/${phone2}?text=${encodedMessage}`, '_blank');
+    }, 500);
+    
     toast.success("¡Mensaje enviado!", {
-      description: "Nos pondremos en contacto contigo pronto."
+      description: "Se ha abierto WhatsApp para enviar tu mensaje."
     });
+    
     setFormData({
       name: "",
       email: "",
