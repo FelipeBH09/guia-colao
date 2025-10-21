@@ -46,13 +46,13 @@ const SobreNosotros = () => {
               Nuestra Historia
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4 text-justify">
-              La Guía COLAO nace de la pasión por el café, la calidad y el deseo de conectar a los amantes del café con los mejores establecimientos de la República Dominicana. Inspirada y fundada por Emely Hernández y Hanna Méndez, estudiantes de Hospitalidad y Turismo, cursando la materia de Gestión de Alimentos y Bebidas de la PUCMM, COLAO surge ante la falta de una guía que evalúe de manera profesional las mejores cafeterías del país.
+              La Guía COLAO nace el 8 de octubre de 2025 de la pasión por el café, la calidad y el deseo de conectar a los amantes del buen café con los mejores establecimientos de la República Dominicana. Fue creada por Emely Hernández y Hanna Méndez, estudiantes de Hospitalidad y Turismo de la Pontificia Universidad Católica Madre y Maestra (PUCMM), durante la asignatura Gestión de Alimentos y Bebidas, impartida por la profesora Cruz Castillo. Esta guía surgió ante la falta de una plataforma profesional que evaluara cafeterías bajo estándares reales de calidad.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4 text-justify">
-              Nuestra misión es evaluar la cultura cafetera dominicana y reconocer la excelencia donde la encontremos. En el corto tiempo de existencia de la guía, hemos calificado cuatro cafeterías y, tras aplicar nuestro checklist de criterios profesionales, hemos otorgado el Reconocimiento Greca COLAO a aquellas que cumplen con los estándares más altos.
+              Nuestra misión es evaluar la cultura cafetera dominicana y reconocer la excelencia donde la encontremos. En el corto tiempo de existencia de la guía, hemos calificado cuatro cafeterías en el país aplicando nuestro sistema profesional de evaluación y hemos otorgado el reconocimiento Greca COLAO únicamente a aquellas que demuestran estándares superiores.
             </p>
             <p className="text-muted-foreground leading-relaxed text-justify">
-              Nuestra metodología se basa en evaluaciones objetivas realizadas por inspectores que visitan los establecimientos de forma anónima, garantizando opiniones imparciales y honestas.
+              Nuestra metodología es objetiva, transparente y confiable. Cada evaluación es realizada por inspectores anónimos, lo que garantiza calificaciones honestas, imparciales y basadas en experiencia real.
             </p>
           </div>
         </div>
