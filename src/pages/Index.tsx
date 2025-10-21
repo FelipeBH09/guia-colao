@@ -90,7 +90,7 @@ const Index = () => {
               Cafeterías Destacadas
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Las cafeterías con calificación excepcional (4.5★ - 5★) merecedoras del prestigioso Reconocimiento Greca COLAO
+              Las cafeterías con calificación excepcional (4.5★ - 5★) con reconocimiento Greca COLAO
             </p>
           </div>
 
