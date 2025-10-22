@@ -19,7 +19,7 @@ const Greca = () => {
             Reconocimiento Greca COLAO
           </h1>
           <p className="text-xl max-w-3xl mx-auto opacity-90 mb-8">
-            El reconocimiento Greca COLAO es el máximo reconocimiento otorgado por Guía Colao a cafeterías excepcionales con calificaciones de 4.5 a 5 estrellas y evaluado por nuestros inspectores autorizados
+            El reconocimiento Greca COLAO es el máximo reconocimiento otorgado por COLAO a cafeterías excepcionales con calificaciones de 4.5 a 5 estrellas y evaluado por nuestros inspectores autorizados
           </p>
           <div className="flex items-center justify-center gap-1">
             {[1, 2, 3, 4, 5].map(star => <Star key={star} className="h-8 w-8 fill-accent text-accent" />)}
